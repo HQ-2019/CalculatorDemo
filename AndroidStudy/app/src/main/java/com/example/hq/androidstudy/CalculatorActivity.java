@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import java.lang.reflect.Array;
+
 /**
  * Created by HQ on 16/4/30.
  */
@@ -101,10 +103,26 @@ public class CalculatorActivity extends Activity implements View.OnClickListener
         String showViewText = this.et_showView.getText().toString();
         //获取按钮的文字
         String str = (String) ((Button)v).getText();
-        et_showView.setText(str);
-//        Intent intent = new Intent(CalculatorActivity.this, GuideActivity.class);
-//        startActivity(intent);
-//        overridePendingTransition(R.anim.anim_push_left_in, R.anim.anim_push_right_out);
+        et_showView.setText((showViewText.equals("0") ? "":showViewText) + str);
+        Array
+        //全部清除按钮
+        if (v.getId() == R.id.btn_clear) {
+            et_showView.setText("0");
+            return;
+        }
+
+        //删除按钮 只删除一个字符
+        if (v.getId() == R.id.btn_del && showViewText.length() > 0) {
+            if (showViewText.replace(" ", "").length() <= 1) {
+                et_showView.setText("0");
+            } else  {
+                //去掉首尾的空格
+                showViewText = showViewText.trim();
+                et_showView.setText(showViewText.substring(0, showViewText.length()-1));
+            }
+
+            return;
+        }
 
     }
 

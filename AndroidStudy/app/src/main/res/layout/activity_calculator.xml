@@ -26,6 +26,7 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_marginTop="20dip"
+        android:layout_marginRight="10dp"
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
@@ -40,49 +41,22 @@
 
             <Button
                 android:id="@+id/btn_clear"
-                android:layout_width="fill_parent"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:gravity="bottom|right"
-                android:paddingBottom="10dp"
-                android:paddingRight="10dp"
-                android:textSize="20sp"
+                style="@style/buttonStyle"
                 android:text="C"/>
 
             <Button
                 android:id="@+id/btn_del"
-                android:layout_width="fill_parent"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:layout_marginLeft="10dip"
-                android:gravity="bottom|right"
-                android:paddingBottom="10dp"
-                android:paddingRight="10dp"
-                android:textSize="20sp"
+                style="@style/buttonStyle"
                 android:text="Del" />
 
             <Button
                 android:id="@+id/btn_divide"
-                android:layout_width="fill_parent"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:layout_marginLeft="10dip"
-                android:gravity="bottom|right"
-                android:paddingBottom="10dp"
-                android:paddingRight="10dp"
-                android:textSize="20sp"
+                style="@style/buttonStyle"
                 android:text="÷"/>
 
             <Button
                 android:id="@+id/btn_multiply"
-                android:layout_width="fill_parent"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:layout_marginLeft="10dip"
-                android:gravity="bottom|right"
-                android:paddingBottom="10dp"
-                android:paddingRight="10dp"
-                android:textSize="20sp"
+                style="@style/buttonStyle"
                 android:text="×"/>
 
         </LinearLayout>
@@ -93,54 +67,28 @@
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:gravity="center_horizontal"
             android:orientation="horizontal">
 
             <Button
-            android:id="@+id/btn_7"
-            android:layout_width="fill_parent"
-            android:layout_height="60dp"
-            android:layout_weight="1"
-            android:gravity="bottom|right"
-            android:paddingBottom="10dp"
-            android:paddingRight="10dp"
-            android:textSize="20sp"
-            android:text="7"/>
+                android:id="@+id/btn_7"
+                style="@style/buttonStyle"
+                android:text="7"/>
 
             <Button
                 android:id="@+id/btn_8"
-                android:layout_width="fill_parent"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:layout_marginLeft="10dip"
-                android:gravity="bottom|right"
-                android:paddingBottom="10dp"
-                android:paddingRight="10dp"
-                android:textSize="20sp"
+                style="@style/buttonStyle"
                 android:text="8"/>
 
             <Button
                 android:id="@+id/btn_9"
-                android:layout_width="fill_parent"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:layout_marginLeft="10dip"
-                android:gravity="bottom|right"
-                android:paddingBottom="10dp"
-                android:paddingRight="10dp"
-                android:textSize="20sp"
+                style="@style/buttonStyle"
                 android:text="9"/>
 
             <Button
                 android:id="@+id/btn_minus"
-                android:layout_width="fill_parent"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:layout_marginLeft="10dip"
-                android:gravity="bottom|right"
-                android:paddingBottom="10dp"
-                android:paddingRight="10dp"
-                android:textSize="20sp"
+                style="@style/buttonStyle"
                 android:text="－"/>
 
         </LinearLayout>
@@ -151,55 +99,29 @@
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:gravity="center_horizontal"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/btn_4"
-                android:layout_width="fill_parent"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:gravity="bottom|right"
-                android:paddingBottom="10dp"
-                android:paddingRight="10dp"
-                android:textSize="20sp"
+                style="@style/buttonStyle"
                 android:text="4"/>
 
             <Button
                 android:id="@+id/btn_5"
-                android:layout_width="fill_parent"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:layout_marginLeft="10dip"
-                android:gravity="bottom|right"
-                android:paddingBottom="10dp"
-                android:paddingRight="10dp"
-                android:textSize="20sp"
+                style="@style/buttonStyle"
                 android:text="5"/>
 
             <Button
                 android:id="@+id/btn_6"
-                android:layout_width="fill_parent"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:layout_marginLeft="10dip"
-                android:gravity="bottom|right"
-                android:paddingBottom="10dp"
-                android:paddingRight="10dp"
-                android:textSize="20sp"
+                style="@style/buttonStyle"
                 android:text="6"/>
 
 
             <Button
                 android:id="@+id/btn_pluse"
-                android:layout_width="fill_parent"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:layout_marginLeft="10dip"
-                android:gravity="bottom|right"
-                android:paddingBottom="10dp"
-                android:paddingRight="10dp"
-                android:textSize="20sp"
+                style="@style/buttonStyle"
                 android:text="＋"/>
 
 
@@ -211,6 +133,7 @@
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:gravity="center_horizontal"
             android:orientation="horizontal">
 
@@ -231,37 +154,17 @@
 
                     <Button
                         android:id="@+id/btn_1"
-                        android:layout_width="fill_parent"
-                        android:layout_height="60dp"
-                        android:layout_weight="1"
-                        android:gravity="bottom|right"
-                        android:paddingBottom="10dp"
-                        android:paddingRight="10dp"
-                        android:textSize="20sp"
+                        style="@style/buttonStyle"
                         android:text="1"/>
 
                     <Button
                         android:id="@+id/btn_2"
-                        android:layout_width="fill_parent"
-                        android:layout_height="60dp"
-                        android:layout_weight="1"
-                        android:layout_marginLeft="10dip"
-                        android:gravity="bottom|right"
-                        android:paddingBottom="10dp"
-                        android:paddingRight="10dp"
-                        android:textSize="20sp"
+                        style="@style/buttonStyle"
                         android:text="2"/>
 
                     <Button
                         android:id="@+id/btn_3"
-                        android:layout_width="fill_parent"
-                        android:layout_height="60dp"
-                        android:layout_weight="1"
-                        android:layout_marginLeft="10dip"
-                        android:gravity="bottom|right"
-                        android:paddingBottom="10dp"
-                        android:paddingRight="10dp"
-                        android:textSize="20sp"
+                        style="@style/buttonStyle"
                         android:text="3"/>
 
                 </LinearLayout>
@@ -272,30 +175,18 @@
                 <LinearLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:gravity="center_horizontal"
                     android:orientation="horizontal">
 
                     <Button
                         android:id="@+id/btn_0"
-                        android:layout_width="fill_parent"
-                        android:layout_height="60dp"
-                        android:layout_weight="2"
-                        android:gravity="bottom|right"
-                        android:paddingBottom="10dp"
-                        android:paddingRight="10dp"
-                        android:textSize="20sp"
+                        style="@style/buttonStyle"
                         android:text="0"/>
 
                     <Button
                         android:id="@+id/btn_point"
-                        android:layout_width="fill_parent"
-                        android:layout_height="60dp"
-                        android:layout_weight="1"
-                        android:layout_marginLeft="10dip"
-                        android:gravity="bottom|right"
-                        android:paddingBottom="10dp"
-                        android:paddingRight="10dp"
-                        android:textSize="20sp"
+                        style="@style/buttonStyle"
                         android:text="." />
 
                 </LinearLayout>
@@ -314,7 +205,8 @@
                 android:paddingBottom="10dp"
                 android:paddingRight="10dp"
                 android:textSize="20sp"
-                android:text="=" /> //android:background="#f19510"
+                android:background="@drawable/btn_selector"
+                android:text="=" />
 
         </LinearLayout>
     </LinearLayout>
