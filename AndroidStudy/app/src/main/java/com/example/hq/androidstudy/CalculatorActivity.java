@@ -71,26 +71,51 @@ public class CalculatorActivity extends Activity implements View.OnClickListener
         /**
          * 设置按钮点击事件
          */
-        btn_0.setOnClickListener(this);
-        btn_1.setOnClickListener(this);
-        btn_2.setOnClickListener(this);
-        btn_3.setOnClickListener(this);
-        btn_4.setOnClickListener(this);
-        btn_5.setOnClickListener(this);
-        btn_6.setOnClickListener(this);
-        btn_7.setOnClickListener(this);
-        btn_8.setOnClickListener(this);
-        btn_9.setOnClickListener(this);
+        this.setButtonOnClickAction();
+//        btn_0.setOnClickListener(this);
+//        btn_1.setOnClickListener(this);
+//        btn_2.setOnClickListener(this);
+//        btn_3.setOnClickListener(this);
+//        btn_4.setOnClickListener(this);
+//        btn_5.setOnClickListener(this);
+//        btn_6.setOnClickListener(this);
+//        btn_7.setOnClickListener(this);
+//        btn_8.setOnClickListener(this);
+//        btn_9.setOnClickListener(this);
+//
+//        btn_point.setOnClickListener(this);
+//        btn_divide.setOnClickListener(this);
+//        btn_multiply.setOnClickListener(this);
+//        btn_minus.setOnClickListener(this);
+//        btn_pluse.setOnClickListener(this);
+//        btn_equal.setOnClickListener(this);
+//
+//        btn_clear.setOnClickListener(this);
+//        btn_delete.setOnClickListener(this);
+    }
 
-        btn_point.setOnClickListener(this);
-        btn_divide.setOnClickListener(this);
-        btn_multiply.setOnClickListener(this);
-        btn_minus.setOnClickListener(this);
-        btn_pluse.setOnClickListener(this);
-        btn_equal.setOnClickListener(this);
-
-        btn_clear.setOnClickListener(this);
-        btn_delete.setOnClickListener(this);
+    /**
+     * 设置按钮点击事件
+     */
+    public void setButtonOnClickAction() {
+        findViewById(R.id.btn_0).setOnClickListener(this);
+        findViewById(R.id.btn_1).setOnClickListener(this);
+        findViewById(R.id.btn_2).setOnClickListener(this);
+        findViewById(R.id.btn_3).setOnClickListener(this);
+        findViewById(R.id.btn_4).setOnClickListener(this);
+        findViewById(R.id.btn_5).setOnClickListener(this);
+        findViewById(R.id.btn_6).setOnClickListener(this);
+        findViewById(R.id.btn_7).setOnClickListener(this);
+        findViewById(R.id.btn_8).setOnClickListener(this);
+        findViewById(R.id.btn_9).setOnClickListener(this);
+        findViewById(R.id.btn_point).setOnClickListener(this);
+        findViewById(R.id.btn_divide).setOnClickListener(this);
+        findViewById(R.id.btn_multiply).setOnClickListener(this);
+        findViewById(R.id.btn_minus).setOnClickListener(this);
+        findViewById(R.id.btn_pluse).setOnClickListener(this);
+        findViewById(R.id.btn_equal).setOnClickListener(this);
+        findViewById(R.id.btn_clear).setOnClickListener(this);
+        findViewById(R.id.btn_del).setOnClickListener(this);
     }
 
     /**
@@ -104,7 +129,7 @@ public class CalculatorActivity extends Activity implements View.OnClickListener
         //获取按钮的文字
         String str = (String) ((Button)v).getText();
         et_showView.setText((showViewText.equals("0") ? "":showViewText) + str);
-        Array
+
         //全部清除按钮
         if (v.getId() == R.id.btn_clear) {
             et_showView.setText("0");
